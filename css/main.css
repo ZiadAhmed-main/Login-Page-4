@@ -1,0 +1,97 @@
+:root {
+    --clr-1: #0077c8;
+    --clr-2: #003666;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    height: 100svh;
+    background: linear-gradient(to left top , #037ef3 , #7d3f98 );
+    display: grid;
+    place-content: center;
+}
+.login-content {
+    background-color: #fff;
+    width: 375px;
+    border-radius: 10px;
+}
+@media (max-width: 375px) {
+    .login-content {
+        max-width: 95%;
+        margin: auto;
+    }
+}
+.login-content h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+}
+.login-content form {
+    margin-top: 45px;
+    padding-inline:40px
+}
+.login-content .form-item:nth-child(1) {
+    margin-bottom: 50px;
+}
+.login-content .form-item:not(:nth-child(4)) {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    position: relative;
+}
+.login-content .form-item label {
+    color: #999;
+    position: absolute;
+    top: 0px;
+    transition: .3s;
+}
+.login-content .form-item:focus-within {
+    border-bottom-color: #0099e5;
+}
+.login-content .form-item:focus-within label {
+    top: -30px;
+    color: #0099e5;
+}
+.login-content .form-item input[type="text"] ,
+.login-content .form-item input[type="password"] {
+    width: 100%;
+    border: 0;
+    outline: 0;
+}
+.login-content .forgot {
+    display: block;
+    color: #888;
+    width: fit-content;
+    margin: 20px 0 20px auto;
+}
+.login-content .form-item input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 25px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    background-color: #0099e5 ;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.login-content .form-item input[type="submit"]:hover {
+    background: linear-gradient(to left  , #037ef3 , #7d3f98);
+}
+.login-content .sign-up {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #777;
+}
+.login-content .sign-up a {
+    color: #0099e5;
+}
