@@ -13,6 +13,7 @@ a {
 }
 .container {
     height: 100svh;
+    width: 100%;
     background: linear-gradient(to left top , #037ef3 , #7d3f98 );
     display: grid;
     place-content: center;
